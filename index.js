@@ -38,7 +38,7 @@ function mygeo(city, country)
 {
 	return new Promise(function(resolve, reject){
 		request({
-		url: 'https://maps.googleapis.com/maps/api/geocode/json?address='+city+',+'+country+'&key=AIzaSyBKGGEsrQJREpZsMh4YIdjfhvlIs-K36bY',
+		url: 'https://maps.googleapis.com/maps/api/geocode/json?address='+city+',+'+country+'&key=APIKEY',
 		json: true
 		},(error, response, body) => {
 		if (error) return reject(error);
@@ -76,7 +76,7 @@ function getweather(lat,lng)
 {
 	return new Promise(function(resolve, reject){
 		request({
-		url: 'https://api.darksky.net/forecast/ba8ed164ac5b2d10d5fc6fffcb55f93a/'+lat+','+lng+'?units=si',
+		url: 'https://api.darksky.net/forecast/APIKEY/'+lat+','+lng+'?units=si',
 		json: true
 		},(error, response, body) => {
 		if (error) return reject(error);
