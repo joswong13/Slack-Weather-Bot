@@ -5,7 +5,7 @@ var sleep = require('system-sleep');
 var RtmClient = require('@slack/client').RtmClient;
 var CLIENT_EVENTS = require('@slack/client').CLIENT_EVENTS;
 var RTM_EVENTS = require('@slack/client').RTM_EVENTS;
-var rtm = new RtmClient('xoxb-310982076739-hjsoymmsv2WyhZ3SbTWIhqHq');
+var rtm = new RtmClient('SLACKCLIENT');
 
 var EventEmitter = require("events").EventEmitter;
 var body = new EventEmitter();
